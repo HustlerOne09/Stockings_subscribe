@@ -5,11 +5,16 @@ const priceEL = document.getElementById('price') // цена
 let btn = document.getElementById('btn') // кнопка
 
 function Calculator() {
-    const duration = number(durationEL.value)
-    const periodicity = number(periodicityEL.value)
-    const size = number(sizeEL.value)
+    const duration = Number(durationEL.value)
+    const periodicity = Number(periodicityEL.value)
+    const size = Number(sizeEL.value)
+    let price = 0
 
-    const price = duration * periodicity * size
+    if (duration === 8) {
+        price = (duration * periodicity * size) * 0.9
+    } else {
+        price = duration * periodicity * size
+    }
 
     priceEL.textContent = price
 }

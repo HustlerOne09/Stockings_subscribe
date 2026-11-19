@@ -61,36 +61,39 @@
                 </div>
                 <div class="calc-choice">
                     <div class="field">
-                        <label for="perioicity">1. Выберите частоту:</label>
-                        <select id="perioicity" class="calc-select">
-                            <option value="0">-- Не выбрано --</option>
-                            <option value="once-month">раз в месяц</option>
-                            <option value="twice-month">раз в два месяца</option>
+                        <label for="periodicity">1. Выберите частоту:</label>
+                        <select id="periodicity" class="calc-select">
+                            <option value="1">-- Не выбрано --</option>
+                            <option value="4">раз в месяц</option>
+                            <option value="7">раз в два месяца</option>
                         </select>
                     </div>
                     <div class="field">
                         <label for="duration">2. Выберите длительность:</label>
                         <select id="duration" class="calc-select">
-                            <option value="0">-- Не выбрано --</option>
-                            <option value="month">месяц</option>
-                            <option value="half-year">полгода</option>
-                            <option value="year">год</option>
+                            <option value="1">-- Не выбрано --</option>
+                            <option value="3">месяц</option>
+                            <option value="5">полгода</option>
+                            <option value="8">год</option>
                         </select>
                     </div>
                     <div class="field">
                         <label for="size">3. Выберите размер:</label>
                         <select id="size" class="calc-select">
-                            <option value="0">-- Не выбрано --</option>
-                            <option value="xs">xs</option>
-                            <option value="s">s</option>
-                            <option value="m">m</option>
-                            <option value="xl">xl</option>
-                            <option value="xxl">xxl</option>
+                            <option value="1">-- Не выбрано --</option>
+                            <option value="40">xs</option>
+                            <option value="42">s</option>
+                            <option value="44">m</option>
+                            <option value="46">xl</option>
+                            <option value="48">xxl</option>
                         </select>
                     </div>
                     <div class="price-and-btn">
                         <button class="btn" id="btn">Расчитать</button>
-                        <h2><span id="price">0</span></h2>
+                        <div style="display: flex; font-size: 26px; font-weight: bold; gap: 10px">
+                            <h2><span id="price">0</span></h2>
+                            <p style="margin-top: 15px;">руб.</p>
+                        </div>
                     </div>
                     <div class="sale">
                         <span class="sale-text">При выборе длительности подписки действует скидка <span
