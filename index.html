@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style/style.css">
 </head>
+
 <body>
 
     <!-- Шапка сайта -->
@@ -25,11 +27,13 @@
 
     <!-- Основная часть -->
     <main class="main-content">
-        <div class="container">            
+        <div class="container">
             <section class="intro-section">
-                <h1 class="main-title">Будь крутыыыыыыыым, оформи подписссссску на наши турбо ассиметричные носки ееееее</h1>
+                <h1 class="main-title">Будь крутыыыыыыыым, оформи подписссссску на наши турбо ассиметричные носки ееееее
+                </h1>
                 <p class="intro-text">
-                    <strong>ХронИкИ носкИ.ru</strong> — специализированный онлайн магазин подписки и подписки и подписки и подписки на необычно-ассиметричные носки(соски ХИХИХИХа) 
+                    <strong>ХронИкИ носкИ.ru</strong> — специализированный онлайн магазин подписки и подписки и подписки
+                    и подписки на необычно-ассиметричные носки(соски ХИХИХИХа)
                 </p>
             </section>
 
@@ -37,7 +41,10 @@
             <section class="experience-section">
                 <h2 class="section-title">Опыт работы:</h2>
                 <p class="experience-text">
-                    В бизнесе уже более <strong class="highlight-text">67 лет</strong>.С самого зарождения нашего бизнесса мы предоставляли людям самые ассиметричные носки в мире, и вместе с тем они были самыми необычными, на данный момент вы можете выбрать для них даже запах на любой вкус и цвет (для самых отбитых). Кто такой Децл?
+                    В бизнесе уже более <strong class="highlight-text">67 лет</strong>.С самого зарождения нашего
+                    бизнесса мы предоставляли людям самые ассиметричные носки в мире, и вместе с тем они были самыми
+                    необычными, на данный момент вы можете выбрать для них даже запах на любой вкус и цвет (для самых
+                    отбитых). Кто такой Децл?
                 </p>
             </section>
 
@@ -45,6 +52,53 @@
         <div class="dec-bar">
             <button class="btn-dec">Светлая память Децлу</button>
         </div>
+
+        <section class="calculator">
+            <div class="container">
+                <div class="calc-text">
+                    <h1 class="calc-title">Калькулятор стоимости подписки</h1>
+                    <h2 class="calc-desc">Выберите частоту, длительность и размер, а мы посчитаем стоимость</h2>
+                </div>
+                <div class="calc-choice">
+                    <div class="field">
+                        <label for="perioicity">1. Выберите частоту:</label>
+                        <select id="perioicity" class="calc-select">
+                            <option value="0">-- Не выбрано --</option>
+                            <option value="once-month">раз в месяц</option>
+                            <option value="twice-month">раз в два месяца</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="duration">2. Выберите длительность:</label>
+                        <select id="duration" class="calc-select">
+                            <option value="0">-- Не выбрано --</option>
+                            <option value="month">месяц</option>
+                            <option value="half-year">полгода</option>
+                            <option value="year">год</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="size">3. Выберите размер:</label>
+                        <select id="size" class="calc-select">
+                            <option value="0">-- Не выбрано --</option>
+                            <option value="xs">xs</option>
+                            <option value="s">s</option>
+                            <option value="m">m</option>
+                            <option value="xl">xl</option>
+                            <option value="xxl">xxl</option>
+                        </select>
+                    </div>
+                    <div class="price-and-btn">
+                        <button class="btn" id="btn">Расчитать</button>
+                        <h2><span id="price">0</span></h2>
+                    </div>
+                    <div class="sale">
+                        <span class="sale-text">При выборе длительности подписки действует скидка <span
+                                class="proz">10%</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Подвал -->
@@ -63,4 +117,5 @@
 
     <script src="./script/script.js"></script>
 </body>
+
 </html>

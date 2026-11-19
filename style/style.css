@@ -163,7 +163,9 @@ footer {
     font-weight: 600;
     color: var(--accent-color);
 }
+.calculator{
 
+}
 .footer-copy {
     font-size: 14px;
     color: #666;
