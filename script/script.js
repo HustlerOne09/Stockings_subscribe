@@ -10,12 +10,15 @@ function Calculator() {
     const size = Number(sizeEL.value)
     let price = 0
 
-    if (duration === 8) {
-        price = (duration * periodicity * size) * 0.9
-    } else {
-        price = duration * periodicity * size
-    }
+    price = duration * periodicity * size
 
+    if (duration * periodicity * size == 1) {
+        price = 0
+    } 
+    
+    if (duration === 8) {
+        price = price * 0.9
+    } 
     priceEL.textContent = price
 }
 
