@@ -169,3 +169,16 @@ footer {
     color: #666;
     text-align: right;
 }
+
+@media (max-width: 720px) {
+    body{
+        font-size: 20px;
+    }
+    .btn-contact{
+        text-align: center;
+        font-weight: 900;
+        border-radius: 2px;
+        padding: 6px 12px;
+        font-size: 35;
+    }
+}
