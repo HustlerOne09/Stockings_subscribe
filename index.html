@@ -20,7 +20,7 @@
                     <span class="logo-subtitle">продажа ассиметричных пар</span>
                 </div>
             </a>
-
+            <button class="btn-pair" onclick="openM()">Собери пару</button>
             <a href="#contacts" class="btn-contact">Выйти на связь</a>
         </div>
     </header>
@@ -86,7 +86,7 @@
                             <option value="44">m</option>
                             <option value="46">xl</option>
                             <option value="48">xxl</option>
-                        </select>
+                            </select>
                     </div>
                     <div class="price-and-btn">
                         <button class="calc-btn" id="btn">Расчитать</button>
@@ -118,6 +118,27 @@
         </div>
     </footer>
 
+    <div id="m" class="modal">
+        <div class="modal-box">
+            <button class="modal-x" onclick="closeM()">X</button>
+
+            <h2 class="modal-h">Собери пару</h2>
+
+            <p class="modal-p">Левый:</p>
+            <div id="L" class="prints"></div>
+
+            <p class="modal-p">Правый:</p>
+            <div id="R" class="prints"></div>
+
+            <h3 class="modal-h3">
+                Вот пара:
+                <span id="P1">?</span>
+                <span id="P2">?</span>
+            </h3>
+
+            <button id="ab" class="modal-add" onclick="addP()" disabled>Добавить</button>
+        </div>
+    </div>
     <script src="./script/script.js"></script>
 </body>
 
