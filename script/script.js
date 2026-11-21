@@ -27,7 +27,7 @@ btn.addEventListener('click', (e) => {
     Calculator()
 })
 
-const prints = ['🧦', '🌈', '🦄', '🐸', '🍕', '💀', '🌸', '⚡', '🍄', '👽', '😎']
+const prints = ['🧦', '🌈', '🦄', '🐸', '🍕', '💀', '🌸', '⚡', '🍄', '👽', '😎', '🤓', '💵', '💩', '🤡']
 let L = ''
 let R = ''
 
