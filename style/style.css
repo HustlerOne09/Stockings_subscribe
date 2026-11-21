@@ -68,6 +68,11 @@ body {
     text-transform: uppercase;
 }
 
+.header-buttons {
+    display: flex;
+    gap: 15px;
+}
+
 .btn-contact {
     background-color: var(--accent-color);
     color: #000;
@@ -292,6 +297,12 @@ footer {
         border-radius: 2px;
         padding: 6px 12px;
         font-size: 35;
+    }
+
+    .header-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 }
 
